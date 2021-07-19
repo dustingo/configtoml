@@ -1,0 +1,28 @@
+[cpu]
+model = "Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz"
+processor = 2
+
+[system]
+osname = "CentOS"
+osrelease = "7.9.2009"
+oskernel = "3.10.0-1160.el7.x86_64"
+osarch = "x86_64"
+
+[interface]
+    [interface.a]
+    name = "ens33"
+    speed = "1000Mb/s"
+    mtu = "1500"
+    [interface.b]
+    name = "virbr0"
+    speed = "1000Mb/s"
+    mtp = "1500"
+
+[dns]
+nameserver = ["114.114.114.114","8.8.8.8"]
+
+[memory]
+total = 995700
+
+[resolution]
+server = ["www.baidu.com"]
