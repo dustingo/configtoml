@@ -23,6 +23,13 @@ nameserver = ["114.114.114.114","8.8.8.8"]
 
 [memory]
 total = 995700
+[disk]
+    [disk.dbhome]
+    mountpoint = "/dbhome"
+    size = 20466
+    [disk./]
+    mountpoint = "/"
+    size = 18121
 
 [resolution]
 server = ["www.baidu.com"]
