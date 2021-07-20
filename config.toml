@@ -28,7 +28,7 @@ total = 995700
     mountpoint = "/dbhome"
     size = 20466
     [disk.root]
-    mountpoint = "/"
+    mountpoint = "/export"
     size = 18121
 
 [resolution]
