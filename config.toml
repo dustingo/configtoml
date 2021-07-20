@@ -9,11 +9,11 @@ oskernel = "3.10.0-1160.el7.x86_64"
 osarch = "x86_64"
 
 [interface]
-    [interface.a]
+    [interface.ens33]
     name = "ens33"
     speed = "1000Mb/s"
     mtu = "1500"
-    [interface.b]
+    [interface.ens34]
     name = "virbr0"
     speed = "1000Mb/s"
     mtp = "1500"
