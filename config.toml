@@ -23,6 +23,7 @@ nameserver = ["114.114.114.114","8.8.8.8"]
 
 [memory]
 total = 995700
+#磁盘的大小size类型为float64
 [disk]
     [disk.dbhome]
     mountpoint = "/dbhome"
@@ -30,6 +31,9 @@ total = 995700
     [disk.root]
     mountpoint = "/"
     size = 18121.0
+    [disk.export]
+    mountpoint = "/export"
+    size = 29300.0
 
 [resolution]
 server = ["www.baidu.com"]
