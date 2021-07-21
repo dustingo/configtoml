@@ -26,10 +26,10 @@ total = 995700
 [disk]
     [disk.dbhome]
     mountpoint = "/dbhome"
-    size = 20466
+    size = 20466.0
     [disk.root]
     mountpoint = "/"
-    size = 18121
+    size = 18121.0
 
 [resolution]
 server = ["www.baidu.com"]
