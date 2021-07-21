@@ -6,7 +6,7 @@ processor = 2
 osname = "CentOS"
 osrelease = "7.9.2009"
 oskernel = "3.10.0-1160.el7.x86_64"
-osarch = "x86_64"
+osarch = "amd64"
 
 [interface]
     [interface.ens33]
