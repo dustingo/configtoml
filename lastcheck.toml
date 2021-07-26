@@ -45,15 +45,15 @@
         "iptables.service"
     ]
 
-[installed]
-    [installed.yum]
+[install]
+    [install.yum]
     state = 1
     action = "icm"
     hostname = "api.pushserver.dev"
     name = [
         "ntpd"
     ]
-    [insatlled.pip]
+    [insatll.pip]
     state = 1
     action = "icm"
     hostname = "api.pushserver.dev"
