@@ -83,12 +83,12 @@
     hostname = "api.pushserver.dev"
         [ulimit.core.soft]
         domain = "root"
-        tyoe = "soft"
+        type = "soft"
         item = "core"
         value = "unlimited"
         [ulimit.core.hard]
         domain = "root"
-        tyoe = "hard"
+        type = "hard"
         item = "core"
         value = "unlimited"
     [ulimit.nofile]
@@ -97,12 +97,12 @@
     hostname = "api.pushserver.dev"
         [ulimit.nofile.soft]
         domain = "root"
-        tyoe = "soft"
+        type = "soft"
         item = "nofile"
         value = "65535"
         [ulimit.nofile.hard]
         domain = "root"
-        tyoe = "hard"
+        type = "hard"
         item = "nofile"
         value = "65535"
     [ulimit.nproc]
@@ -111,12 +111,12 @@
     hostname = "api.pushserver.dev"
         [ulimit.nproc.soft]
         domain = "root"
-        tyoe = "soft"
+        type = "soft"
         item = "nproc"
         value = "65535"
         [ulimit.nproc.hard]
         domain = "root"
-        tyoe = "hard"
+        type = "hard"
         item = "nproc"
         value = "65535"
 
