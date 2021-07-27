@@ -46,16 +46,19 @@
 [package]
     [package.yum]
     state = 1
+    label = "yum"
     name = [
         "ntpd"
     ]
     [package.pip]
     state = 1
+    label  = "pip"
     name = [
         "sh"
     ]
      [package.perl]
     state = 1
+    label = "perl"
     name = [
         "XML::Parser"
     ]
