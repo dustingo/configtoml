@@ -6,7 +6,6 @@
     [service.off]
     state = 1
     label = "off"
-    hostname = "api.pushserver.dev"
     name = [
         "cups.path",
         "cups.service",
@@ -39,7 +38,6 @@
     [service.on]
     state = 1
     label = "on"
-    hostname = "api.pushserver.dev"
     name = [
         "ntpd.service",
         "iptables.service"
@@ -49,21 +47,18 @@
     [package.yum]
     state = 1
     action = "pcm"
-    hostname = "api.pushserver.dev"
     name = [
         "ntpd"
     ]
     [package.pip]
     state = 1
     action = "pcm"
-    hostname = "api.pushserver.dev"
     name = [
         "sh"
     ]
      [package.perl]
     state = 1
     action = "pcm"
-    hostname = "api.pushserver.dev"
     name = [
         "XML::Parser"
     ]
@@ -87,7 +82,6 @@
     [ulimit.core]
     state = 1
     action = "ucm"
-    hostname = "api.pushserver.dev"
         [ulimit.core.soft]
         domain = "root"
         type = "soft"
@@ -101,7 +95,6 @@
     [ulimit.nofile]
     state = 1
     action = "ucm"
-    hostname = "api.pushserver.dev"
         [ulimit.nofile.soft]
         domain = "root"
         type = "soft"
@@ -115,7 +108,6 @@
     [ulimit.nproc]
     state = 1
     action = "ucm"
-    hostname = "api.pushserver.dev"
         [ulimit.nproc.soft]
         domain = "root"
         type = "soft"
