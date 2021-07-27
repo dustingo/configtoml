@@ -60,6 +60,13 @@
     name = [
         "sh"
     ]
+     [package.perl]
+    state = 1
+    action = "pcm"
+    hostname = "api.pushserver.dev"
+    name = [
+        "XML::Parser"
+    ]
 
 [directory]
     [directory.export]
