@@ -1,11 +1,11 @@
 #state表示当前区域的有效性： 1 表示启用，0不启用;如果为0，那么将会忽略此区域
-#action标识此区域需要执行的动作；
-#action 为 ”scm“: service confirm,只确认服务的状态是否为配置状态
-#action 为 ”icm“：installed confirm，只确认package是否已经安装
+
+
+#service.off 和 service.on 为固定标签;label也为固定，辅助解析
 [service]
     [service.off]
     state = 1
-    action = "scm"
+    label = "off"
     hostname = "api.pushserver.dev"
     name = [
         "cups.path",
@@ -38,7 +38,7 @@
     ]
     [service.on]
     state = 1
-    action = "scm"
+    label = "on"
     hostname = "api.pushserver.dev"
     name = [
         "ntpd.service",
