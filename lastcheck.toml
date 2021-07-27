@@ -46,19 +46,16 @@
 [package]
     [package.yum]
     state = 1
-    action = "pcm"
     name = [
         "ntpd"
     ]
     [package.pip]
     state = 1
-    action = "pcm"
     name = [
         "sh"
     ]
      [package.perl]
     state = 1
-    action = "pcm"
     name = [
         "XML::Parser"
     ]
