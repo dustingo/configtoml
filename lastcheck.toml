@@ -43,6 +43,7 @@
         "iptables.service"
     ]
 
+#label 可以指定版本，如python2时，可以为pip或pip2，python3时为pip3
 [package]
     [package.yum]
     state = 1
@@ -52,7 +53,7 @@
     ]
     [package.pip]
     state = 1
-    label  = "pip"
+    label  = "pip3"
     name = [
         "sh"
     ]
