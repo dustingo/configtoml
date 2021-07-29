@@ -67,13 +67,11 @@
 [directory]
     [directory.export]
     state = 1
-    action = "dcm"
     path = "/export"
     mode = 0755
     owner = "root"
     [directory.logs]
     state = 1
-    action = "dcm"
     path = "/export/logs"
     mode = 0755
     owner = "root"
@@ -82,7 +80,6 @@
 [ulimit]
     [ulimit.core]
     state = 1
-    action = "ucm"
         [ulimit.core.soft]
         domain = "root"
         type = "soft"
@@ -95,7 +92,6 @@
         value = "unlimited"
     [ulimit.nofile]
     state = 1
-    action = "ucm"
         [ulimit.nofile.soft]
         domain = "root"
         type = "soft"
@@ -108,7 +104,6 @@
         value = "65535"
     [ulimit.nproc]
     state = 1
-    action = "ucm"
         [ulimit.nproc.soft]
         domain = "root"
         type = "soft"
