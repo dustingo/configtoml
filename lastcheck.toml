@@ -105,13 +105,13 @@
     [ulimit.nproc]
     state = 1
         [ulimit.nproc.soft]
-        domain = "root"
+        domain = "zack"
         type = "soft"
         item = "nproc"
-        value = "65535"
+        value = "5000"
         [ulimit.nproc.hard]
-        domain = "root"
+        domain = "zack"
         type = "hard"
         item = "nproc"
-        value = "65535"
+        value = "10000"
 
