@@ -114,4 +114,58 @@
         type = "hard"
         item = "nproc"
         value = "10000"
+ #内核参数
+[kernel]
+state = 1
+    [kernel.msgmnb]
+    name = "kernel.msgmnb"
+    value = "'65536'"
+    [kernel.msgmax]
+    name = "kernel.msgmax"
+    value = "65536"
+    [kernel.shmmax]
+    name = "kernel.shmmax"
+    value = "268435455999"
+    [kernel.shmall]
+    name = "kernel.shmall"
+    value = "4294967296"
+[vm]
+state = 1
+    [vm.swappiness]
+    name = "vm.swappiness"
+    value = "0"
+[net]
+ state = 1
+    [net.nf_conntrack_max]
+    name = "net.netfilter.nf_conntrack_max"
+    value = "6553560"
+    [net.somaxconn]
+    name = "net.core.somaxconn"
+    value = "65535"
+    [net.optmem_max]
+    name = " net.core.optmem_max"
+    value = "81920"
+    [net.rmem_max]
+    name = "net.core.optmem_max"
+    value = "8388608"
+    [net.wmem_max]
+    name = "net.core.wmem_max"
+    value = "8388608"
+[fs]
+state = 1
+    [fs.file-max]
+    name = "fs.file-max"
+    value = "6553560"
+[abi]
+state = 0
+[crypto]
+state = 0
+[sunrpc]
+state = 0
+[user]
+satte = 0
+    
+ 
+    
+
 
