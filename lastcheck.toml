@@ -115,57 +115,70 @@
         item = "nproc"
         value = "10000"
  #内核参数
-[kernel]
+ [[kernel]]
 state = 1
-    [kernel.msgmnb]
+    [[kernel]]
     name = "kernel.msgmnb"
     value = "'65536'"
-    [kernel.msgmax]
+    [[kernel]]
     name = "kernel.msgmax"
     value = "65536"
-    [kernel.shmmax]
+    [[kernel]]
     name = "kernel.shmmax"
     value = "268435455999"
-    [kernel.shmall]
+    [[kernel]]
     name = "kernel.shmall"
     value = "4294967296"
-[vm]
+[[vm]]
 state = 1
-    [vm.swappiness]
+    [[vm]]
     name = "vm.swappiness"
     value = "0"
-[net]
- state = 1
-    [net.nf_conntrack_max]
+[[net]]
+state = 1
+    [[net]]
     name = "net.netfilter.nf_conntrack_max"
     value = "6553560"
-    [net.somaxconn]
+    [[net]]
     name = "net.core.somaxconn"
     value = "65535"
-    [net.optmem_max]
+    [[net]]
     name = " net.core.optmem_max"
     value = "81920"
-    [net.rmem_max]
+    [[net]]
     name = "net.core.optmem_max"
     value = "8388608"
-    [net.wmem_max]
+    [[net]]
     name = "net.core.wmem_max"
     value = "8388608"
-[fs]
+[[fs]]
 state = 1
-    [fs.file-max]
+    [[fs]]
     name = "fs.file-max"
     value = "6553560"
-[abi]
+
+[[abi]]
 state = 0
-[crypto]
+    [[abi]]
+    name = "abi.vsyscall32"
+    value = "1"
+[[crypto]]
 state = 0
-[sunrpc]
+    [[crypto]]
+    name = "crypto.fips_enabled"
+    value = "0"
+
+[[sunrpc]]
 state = 0
-[user]
-satte = 0
-    
- 
+    [[sunrpc]]
+    name = "sunrpc.max_resvport"
+    value = "1023"
+
+[[user]]
+state = 0
+    [[user]]
+    name = "user.max_net_namespaces"
+    value  = "3766"
     
 
 
