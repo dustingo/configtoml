@@ -115,70 +115,39 @@
         item = "nproc"
         value = "10000"
  #内核参数
- [[kernel]]
-state = 1
-    [[kernel]]
-    name = "kernel.msgmnb"
-    value = "'65536'"
-    [[kernel]]
-    name = "kernel.msgmax"
-    value = "65536"
-    [[kernel]]
-    name = "kernel.shmmax"
-    value = "268435455999"
-    [[kernel]]
-    name = "kernel.shmall"
-    value = "4294967296"
-[[vm]]
-state = 1
-    [[vm]]
-    name = "vm.swappiness"
-    value = "0"
-[[net]]
-state = 1
-    [[net]]
-    name = "net.netfilter.nf_conntrack_max"
-    value = "6553560"
-    [[net]]
-    name = "net.core.somaxconn"
-    value = "65535"
-    [[net]]
-    name = " net.core.optmem_max"
-    value = "81920"
-    [[net]]
-    name = "net.core.optmem_max"
-    value = "8388608"
-    [[net]]
-    name = "net.core.wmem_max"
-    value = "8388608"
-[[fs]]
-state = 1
-    [[fs]]
-    name = "fs.file-max"
-    value = "6553560"
-
-[[abi]]
-state = 0
-    [[abi]]
-    name = "abi.vsyscall32"
-    value = "1"
-[[crypto]]
-state = 0
-    [[crypto]]
-    name = "crypto.fips_enabled"
-    value = "0"
-
-[[sunrpc]]
-state = 0
-    [[sunrpc]]
-    name = "sunrpc.max_resvport"
-    value = "1023"
-
-[[user]]
-state = 0
-    [[user]]
-    name = "user.max_net_namespaces"
-    value  = "3766"
-    
+[[syskernel]]
+# state 依旧为是否有效标志位
+name = "state"
+value = 1
+[[syskernel]]
+name = "kernel.msgmnb"
+value = 65536
+[[syskernel]]
+name = "kernel.msgmax"
+value = 65536
+[[syskernel]]
+name = "kernel.shmmax"
+value = 268435455999
+[[syskernel]]
+name = "kernel.shmall"
+value = 429496729
+[[syskernel]]
+name = "vm.swappiness"
+value = 0
+[[syskernel]]
+name = "net.netfilter.nf_conntrack_max"
+value = 6553560
+[[syskernel]]
+name = "net.core.somaxconn"
+value = 65535
+[[syskernel]]
+name = " net.core.optmem_max"
+value = 81920
+[[syskernel]]
+name = "net.core.wmem_max"
+value = 8388608
+[[syskernel]]
+name = "fs.file-max"
+value = 6553560
 
 
