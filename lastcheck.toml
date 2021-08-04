@@ -114,7 +114,7 @@
         item = "nproc"
         value = "10000"
         
- #内核参数，增删按照下面的格式即可
+ #内核参数，增删按照下面的格式即可，注意""不要有空格
 [[syskernel]]
 # state 依旧为是否有效标志位
 name = "state"
@@ -141,7 +141,7 @@ value = 6553560
 name = "net.core.somaxconn"
 value = 65535
 [[syskernel]]
-name = " net.core.optmem_max"
+name = "net.core.optmem_max"
 value = 81920
 [[syskernel]]
 name = "net.core.wmem_max"
