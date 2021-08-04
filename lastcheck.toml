@@ -1,6 +1,4 @@
 #state表示当前区域的有效性： 1 表示启用，0不启用;如果为0，那么将会忽略此区域
-
-
 #service.off 和 service.on 为固定标签;label也为固定，辅助解析
 [service]
     [service.off]
@@ -64,6 +62,7 @@
         "XML::Parser"
     ]
 
+#目录信息，"directory.export"的export为任意标识，主要以”path“为准
 [directory]
     [directory.export]
     state = 1
@@ -76,7 +75,7 @@
     mode = 0755
     owner = "root"
 
-#ulimted 参数
+#ulimted 参数；常用的只有nofile，nproc，core；定义时只需要修改相关元素即可
 [ulimit]
     [ulimit.core]
     state = 1
@@ -114,7 +113,8 @@
         type = "hard"
         item = "nproc"
         value = "10000"
- #内核参数
+        
+ #内核参数，增删按照下面的格式即可
 [[syskernel]]
 # state 依旧为是否有效标志位
 name = "state"
@@ -150,4 +150,7 @@ value = 8388608
 name = "fs.file-max"
 value = 6553560
 
-
+#dns校验
+[dns]
+state = 1
+nameserver = ["114.114.114.114","8.8.8.8"]
