@@ -34,6 +34,3 @@ total = 995700
     [disk.export]
     mountpoint = "/export"
     size = 29300.0
-
-[resolution]
-server = ["www.baidu.com"]
