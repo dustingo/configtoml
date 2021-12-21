@@ -17,7 +17,7 @@
         "chronyd.service",
         "dbus-org.bluez.service",
         "dbus-org.freedesktop.Avahi.service",
-        "dbus-org.freedesktop.ModemManager1.servic",
+        "dbus-org.freedesktop.ModemManager1.service",
         "display-manager.service",
         "dmraid-activation.service",
         "gdm.service",
