@@ -31,7 +31,9 @@
         "postfix.service",
         "qemu-guest-agent.service",
         "rpcbind.service",
-        "tuned.service "
+        "tuned.service ",
+        "NetworkManager-wait-online.service",
+        "NetworkManager.service"
     ]
     [service.on]
     state = 1
